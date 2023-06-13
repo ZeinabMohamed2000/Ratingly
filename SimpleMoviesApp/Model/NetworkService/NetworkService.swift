@@ -8,7 +8,7 @@
 import Foundation
 
 final class NetworkService {
-    func getMovies(url: String, complition: @escaping (Result<Movies,MError>)-> Void) {
+    func getMovies(url: String, complition: @escaping (Result<[Item],MError>)-> Void) {
  
         guard let url = URL(string: url) else {
             complition(.failure(.invaildUrl))
@@ -22,7 +22,7 @@ final class NetworkService {
                 return}
            
             do{
-                let movies = try JSONDecoder().decode(Movies.self, from: data)
+                let movies = try JSONDecoder().decode([Item].self, from: data)
                 complition(.success(movies))
             }
             catch{

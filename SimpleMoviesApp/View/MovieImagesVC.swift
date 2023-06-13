@@ -8,23 +8,26 @@
 import UIKit
 
 class MovieImagesVC: UIViewController {
+    
+    private var searchBar: UISearchController = UISearchController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemBackground
+        configureSearchBar()
+        
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func configureSearchBar() {
+        searchBar.searchBar.placeholder = "Enter the movie name"
+        searchBar.searchBar.searchBarStyle = .minimal
+        searchBar.searchResultsUpdater = self
+        navigationItem.searchController = searchBar
+        
     }
-    */
-
+}
+extension MovieImagesVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let query = searchController.searchBar.text else {return}
+    }
 }
