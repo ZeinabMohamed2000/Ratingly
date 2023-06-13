@@ -120,6 +120,17 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		3D9636BB2A37E96F005BF976 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3DA8A4752A365A7D00168E2C /* Info.plist */,
+				3DA8A4702A365A7D00168E2C /* Assets.xcassets */,
+				3DA8A4692A365A7B00168E2C /* SceneDelegate.swift */,
+				3DA8A4672A365A7B00168E2C /* AppDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		3DA8A45B2A365A7B00168E2C = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +154,10 @@
 		3DA8A4662A365A7B00168E2C /* SimpleMoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D9636BB2A37E96F005BF976 /* Support */,
 				3D9636B82A37E8F8005BF976 /* ViewModel */,
 				3D9636B72A37E8C2005BF976 /* View */,
 				3D9636AF2A37DF2E005BF976 /* Model */,
-				3DA8A4672A365A7B00168E2C /* AppDelegate.swift */,
-				3DA8A4692A365A7B00168E2C /* SceneDelegate.swift */,
-				3DA8A4702A365A7D00168E2C /* Assets.xcassets */,
-				3DA8A4752A365A7D00168E2C /* Info.plist */,
 			);
 			path = SimpleMoviesApp;
 			sourceTree = "<group>";
@@ -478,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleMoviesApp/Info.plist;
+				INFOPLIST_FILE = /Users/zeinab/Desktop/Ratingly/Ratingly/SimpleMoviesApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -504,7 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SimpleMoviesApp/Info.plist;
+				INFOPLIST_FILE = /Users/zeinab/Desktop/Ratingly/Ratingly/SimpleMoviesApp/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
