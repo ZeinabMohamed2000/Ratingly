@@ -9,9 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let welcomeImageView = UIImageView()
-    let getStartedButton = UIButton()
-    let aboutTextView = UITextView()
+    private let welcomeImageView = UIImageView()
+    private let getStartedButton = UIButton()
+    private let aboutTextView = UITextView()
     
 
     override func viewDidLoad() {
